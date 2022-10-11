@@ -66,3 +66,12 @@ function soma(){
         let r = 240 -Number(n1) + Number(n2) + Number(n3) + Number(n4); 
         document.getElementById("resultado").innerHTML = r; 
     }
+
+       function necessário(){
+    let n1 = document.getElementById("b1").value;
+    let n2 = document.getElementById("b2").value;
+    let n3 = document.getElementById("b3").value;
+    let n4 = document.getElementById("b4").value;
+    let r = 240 - (Number(n1) + Number(n2) + Number(n3) + Number(n4));
+    document.getElementById("resultado").innerHTML = r;
+}
