@@ -21,16 +21,16 @@ function alo(){
 // for(inicio, validaçao, manutençao)
 function escreva(){
     for(var i=1; i <= 10; i++){
-         for(var j = 1; j <=10; j++){
+        for(var j = 1; j <=10; j++){
             document.write(i + " x " + j + " = " + (j*i)+"<br>");
-         }
-         document.write("<br>");
         }
+        document.write("<br>");
+    }
 }
 
 function quadrado(){
     for(var i = 2; i < 11; i++){
-    document.write("O quadrado de " + i + " é " + (i*i)+"<br>")
+        document.write("O quadrado de " + i + " é " + (i*i)+"<br>");
     }
 }
 function moeda(atual){
@@ -42,10 +42,14 @@ function total(){
     
     let t = document.getElementById("meses").value;
     let resultado = 0;
+    let saida = "";
     for(let m = 1; m <= t; m++){
         resultado = (val * ((ju/100)+1));
         val = resultado;
-        document.write("Mês " + m + " valor de " + moeda(val) + "<br>");
+        saida += "Mês " + m + ": " + moeda(val) + "<br>";
+        // document.write("Mês " + m + " valor de " + moeda(val) + "<br>");
     }
-    document.write("O total é de: " + moeda(resultado) );
+    document.getElementById("mes").innerHTML = saida;
+    document.getElementById("resultado").innerHTML = "Total: " + moeda(resultado);
+    // docudment.write("O total é de: " + moeda(resultado) );
 }
