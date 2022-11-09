@@ -19,7 +19,7 @@
         <label for="calcFin">
           <h3>Financeira</h3>
     </label>
-       
+       <div class="calcF">
     <div class="spResultado">
             <span id="resultado">Total:0,0</span><br>
         </div>
@@ -32,7 +32,25 @@
             <span id="mes">Mês a Mês</span>
         </div>
     </div>
-    
+</div>
+
+<input type="checkbox" id="calcESG">
+<div class="calculadoraRaiz">
+    <label for="calcESG">
+      <h3>Equação <br> Segundo Grau</h3>
+</label>
+   <div class="calcE">
+<div class="spRaiz">
+        <span id="raiz">x1:?? x2:??</span><br>
+    </div>
+
+    a: <input id="a" type="text"> <br>
+    b: <input id="b" type="text"> <br>
+    c: <input id="c" type="text"> <br>
+    <button onclick="calcularRaiz()">Calcular</button>
+    </div>
+</div>
+</div>
 </body>
 </html>
 
